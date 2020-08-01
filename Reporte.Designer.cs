@@ -30,25 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.OrdenPedidoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataSetFarmacia = new TP1_Reportes.DataSetFarmacia();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.OrdenPedidoTableAdapter = new TP1_Reportes.DataSetFarmaciaTableAdapters.OrdenPedidoTableAdapter();
             this.PaisBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.DataSetPaises = new TP1_Reportes.DataSetPaises();
+            this.OrdenPedidoTableAdapter = new TP1_Reportes.DataSetFarmaciaTableAdapters.OrdenPedidoTableAdapter();
+            this.PaisTableAdapter = new TP1_Reportes.DataSetPaisesTableAdapters.PaisTableAdapter();
+            this.tp2_netDataSet = new TP1_Reportes.tp2_netDataSet();
+            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usuariosTableAdapter = new TP1_Reportes.tp2_netDataSetTableAdapters.usuariosTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.OrdenPedidoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetFarmacia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaisBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetPaises)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tp2_netDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // OrdenPedidoBindingSource
-            // 
-            this.OrdenPedidoBindingSource.DataMember = "OrdenPedido";
-            this.OrdenPedidoBindingSource.DataSource = this.DataSetFarmacia;
-            // 
-            // DataSetFarmacia
-            // 
-            this.DataSetFarmacia.DataSetName = "DataSetFarmacia";
-            this.DataSetFarmacia.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -62,15 +60,48 @@
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
-            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
+            // 
+            // OrdenPedidoBindingSource
+            // 
+            this.OrdenPedidoBindingSource.DataMember = "OrdenPedido";
+            this.OrdenPedidoBindingSource.DataSource = this.DataSetFarmacia;
+            // 
+            // DataSetFarmacia
+            // 
+            this.DataSetFarmacia.DataSetName = "DataSetFarmacia";
+            this.DataSetFarmacia.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // PaisBindingSource
+            // 
+            this.PaisBindingSource.DataMember = "Pais";
+            this.PaisBindingSource.DataSource = this.DataSetPaises;
+            // 
+            // DataSetPaises
+            // 
+            this.DataSetPaises.DataSetName = "DataSetPaises";
+            this.DataSetPaises.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // OrdenPedidoTableAdapter
             // 
             this.OrdenPedidoTableAdapter.ClearBeforeFill = true;
             // 
-            // PaisBindingSource
+            // PaisTableAdapter
             // 
-            this.PaisBindingSource.DataSource = typeof(TP1_Reportes.Pais);
+            this.PaisTableAdapter.ClearBeforeFill = true;
+            // 
+            // tp2_netDataSet
+            // 
+            this.tp2_netDataSet.DataSetName = "tp2_netDataSet";
+            this.tp2_netDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usuariosBindingSource
+            // 
+            this.usuariosBindingSource.DataMember = "usuarios";
+            this.usuariosBindingSource.DataSource = this.tp2_netDataSet;
+            // 
+            // usuariosTableAdapter
+            // 
+            this.usuariosTableAdapter.ClearBeforeFill = true;
             // 
             // Reporte
             // 
@@ -80,10 +111,13 @@
             this.Controls.Add(this.reportViewer1);
             this.Name = "Reporte";
             this.Text = "Reporte";
-            this.Load += new System.EventHandler(this.Paises_Load);
+            this.Load += new System.EventHandler(this.ReporteFarmacia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.OrdenPedidoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataSetFarmacia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PaisBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetPaises)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tp2_netDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,5 +129,10 @@
         private DataSetFarmacia DataSetFarmacia;
         private DataSetFarmaciaTableAdapters.OrdenPedidoTableAdapter OrdenPedidoTableAdapter;
         private System.Windows.Forms.BindingSource PaisBindingSource;
+        private DataSetPaises DataSetPaises;
+        private DataSetPaisesTableAdapters.PaisTableAdapter PaisTableAdapter;
+        private System.Windows.Forms.BindingSource usuariosBindingSource;
+        private tp2_netDataSet tp2_netDataSet;
+        private tp2_netDataSetTableAdapters.usuariosTableAdapter usuariosTableAdapter;
     }
 }

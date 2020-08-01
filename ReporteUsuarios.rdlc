@@ -6,22 +6,22 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.85886cm</Width>
+              <Width>0.70083cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.85886cm</Width>
+              <Width>4.03458cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.85886cm</Width>
+              <Width>3.66417cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.26115cm</Width>
+              <Width>3.69063cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.85886cm</Width>
+              <Width>5.64854cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>4.96232cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -37,7 +37,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Codigo de País</Value>
+                              <Value>ID</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -69,7 +69,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Nombre</Value>
+                              <Value>Nombre de Usuario</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -101,7 +101,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Continente</Value>
+                              <Value>Nombre</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -133,7 +133,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Año de Independencia</Value>
+                              <Value>Apellido</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -165,7 +165,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Población</Value>
+                              <Value>Correo Electrónico</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -197,7 +197,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Expectativa de Vida</Value>
+                              <Value>Habilitado</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -227,21 +227,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PaisCodigo">
+                    <Textbox Name="id_usuario">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PaisCodigo.Value</Value>
+                              <Value>=Fields!id_usuario.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PaisCodigo</rd:DefaultName>
+                      <rd:DefaultName>id_usuario</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -257,21 +257,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PaisNombre">
+                    <Textbox Name="nombre_usuario">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PaisNombre.Value</Value>
+                              <Value>=Fields!nombre_usuario.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PaisNombre</rd:DefaultName>
+                      <rd:DefaultName>nombre_usuario</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -287,21 +287,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PaisContinente">
+                    <Textbox Name="nombre">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PaisContinente.Value</Value>
+                              <Value>=Fields!nombre.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PaisContinente</rd:DefaultName>
+                      <rd:DefaultName>nombre</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -317,21 +317,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PaisIndependencia">
+                    <Textbox Name="apellido">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PaisIndependencia.Value</Value>
+                              <Value>=Fields!apellido.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PaisIndependencia</rd:DefaultName>
+                      <rd:DefaultName>apellido</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -347,21 +347,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PaisPoblacion">
+                    <Textbox Name="email">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PaisPoblacion.Value</Value>
+                              <Value>=Fields!email.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PaisPoblacion</rd:DefaultName>
+                      <rd:DefaultName>email</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -377,25 +377,21 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="PaisExpectativaDeVida">
+                    <Textbox Name="habilitado">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!PaisExpectativaDeVida.Value</Value>
-                              <Style />
-                            </TextRun>
-                            <TextRun>
-                              <Value> años</Value>
+                              <Value>=Fields!habilitado.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>PaisExpectativaDeVida</rd:DefaultName>
+                      <rd:DefaultName>habilitado</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -434,9 +430,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>2.53683cm</Top>
+        <Top>1.905cm</Top>
         <Height>1.2cm</Height>
-        <Width>20.65891cm</Width>
+        <Width>20.23875cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -450,7 +446,22 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>REPORTE DE PAISES</Value>
+                <Value>ACADEMIA</Value>
+                <Style>
+                  <FontSize>20pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Reporte de USUARIOS</Value>
                 <Style>
                   <FontSize>20pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -462,9 +473,9 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox7</rd:DefaultName>
-        <Height>1.8609cm</Height>
-        <Width>20.65891cm</Width>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Height>1.72861cm</Height>
+        <Width>20.23875cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -480,7 +491,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>8.13343in</Width>
+  <Width>7.97843in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -493,92 +504,68 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSetPaises">
+    <DataSource Name="tp2_netDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>386f90d2-6c25-4077-8fcd-8752a5f41c40</rd:DataSourceID>
+      <rd:DataSourceID>bdc47d79-0ebf-452e-8622-c650b17e7cd7</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>DataSetPaises</DataSourceName>
+        <DataSourceName>tp2_netDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="PaisCodigo">
-          <DataField>PaisCodigo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PaisNombre">
-          <DataField>PaisNombre</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PaisContinente">
-          <DataField>PaisContinente</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PaisRegion">
-          <DataField>PaisRegion</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PaisArea">
-          <DataField>PaisArea</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="PaisIndependencia">
-          <DataField>PaisIndependencia</DataField>
-          <rd:TypeName>System.Int16</rd:TypeName>
-        </Field>
-        <Field Name="PaisPoblacion">
-          <DataField>PaisPoblacion</DataField>
+        <Field Name="id_usuario">
+          <DataField>id_usuario</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="PaisExpectativaDeVida">
-          <DataField>PaisExpectativaDeVida</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="PaisProductoInternoBruto">
-          <DataField>PaisProductoInternoBruto</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="PaisProductoInternoBrutoAntiguo">
-          <DataField>PaisProductoInternoBrutoAntiguo</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="PaisNombreLocal">
-          <DataField>PaisNombreLocal</DataField>
+        <Field Name="nombre_usuario">
+          <DataField>nombre_usuario</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PaisGobierno">
-          <DataField>PaisGobierno</DataField>
+        <Field Name="clave">
+          <DataField>clave</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PaisJefeDeEstado">
-          <DataField>PaisJefeDeEstado</DataField>
+        <Field Name="habilitado">
+          <DataField>habilitado</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PaisCapital">
-          <DataField>PaisCapital</DataField>
+        <Field Name="apellido">
+          <DataField>apellido</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="email">
+          <DataField>email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cambia_clave">
+          <DataField>cambia_clave</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="id_persona">
+          <DataField>id_persona</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PaisCodigo2">
-          <DataField>PaisCodigo2</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSetPaises</rd:DataSetName>
-        <rd:SchemaPath>C:\Net\TP1_Reportes\TP1_Reportes\DataSetPaises.xsd</rd:SchemaPath>
-        <rd:TableName>Pais</rd:TableName>
+        <rd:DataSetName>tp2_netDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Net\TP1_Reportes\TP1_Reportes\tp2_netDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>usuarios</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>PaisTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>usuariosTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>7384a46f-6833-411c-849f-2f1c8e21b657</rd:ReportID>
+  <rd:ReportID>b61ffa76-3b36-4263-9a0a-a5171578e04a</rd:ReportID>
 </Report>

@@ -32,5 +32,25 @@ namespace TP1_Reportes.Properties {
                 return ((string)(this["FarmaciaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Paises;Integrated Security=True")]
+        public string PaisesConnectionString {
+            get {
+                return ((string)(this["PaisesConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=tp2_net;Integrated Security=True")]
+        public string tp2_netConnectionString {
+            get {
+                return ((string)(this["tp2_netConnectionString"]));
+            }
+        }
     }
 }

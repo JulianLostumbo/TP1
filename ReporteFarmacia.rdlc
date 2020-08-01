@@ -38,7 +38,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Número</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -68,7 +70,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Fecha</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -98,7 +102,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Código Cliente</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -128,7 +134,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Nombre Cliente</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -158,7 +166,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Código Empresa</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -188,7 +198,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>Monto Total</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -422,9 +434,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>2.40453cm</Top>
+        <Top>2.43981cm</Top>
         <Height>1.2cm</Height>
-        <Width>20.65891cm</Width>
+        <Width>20.65893cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -465,8 +477,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox7</rd:DefaultName>
-        <Top>0.36724cm</Top>
-        <Height>1.8609cm</Height>
+        <Top>0.63528cm</Top>
+        <Height>1.62814cm</Height>
         <Width>20.65891cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
@@ -479,11 +491,43 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>11-07-20</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox2</rd:DefaultName>
+        <Left>19.20557cm</Left>
+        <Height>0.56472cm</Height>
+        <Width>1.52104cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
     </ReportItems>
-    <Height>2in</Height>
+    <Height>2.01389in</Height>
     <Style />
   </Body>
-  <Width>8.13343in</Width>
+  <Width>8.16008in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
